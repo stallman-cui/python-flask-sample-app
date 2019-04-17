@@ -1,5 +1,10 @@
 pipeline:
-  backend:
+  check:
     image: golang
     commands:
-      - ls
+      - go version
+
+  build:
+    image: python
+    commands:
+      - python -V
