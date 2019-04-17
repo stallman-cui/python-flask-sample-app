@@ -1,8 +1,15 @@
 pipeline:
-  check:
+  prepare:
+    group: check
     image: golang
     commands:
       - go version
+      
+  lint:
+    group: check
+    image: node
+    commands:
+      - node -v
 
   build:
     image: python
