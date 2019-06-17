@@ -15,3 +15,7 @@ pipeline:
     image: python
     commands:
       - python -V
+      
+      
+  
+
